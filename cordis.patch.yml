@@ -1,0 +1,8 @@
+# dsh-conversation-search bundle patch: inserts its plugin row into the Web
+# plugin roster. The single row mounts both halves — the Host half indexes
+# session logs under a cache directory and answers search routes under
+# /api/dsh-conversation-search, and the browser half adds the left sidebar
+# search panel and the floating in-conversation find bar.
+- insert:
+    - id: conversation-search
+      name: '@itstartstosnow/dsh-conversation-search'

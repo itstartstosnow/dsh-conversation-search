@@ -1,0 +1,12 @@
+# dependencies & OS noise
+node_modules/
+.DS_Store
+
+# local development scratch (recon reports, one-off probe scripts, logs)
+.recon/
+probe-host/
+*.log
+npm-debug.log*
+
+# build/publish artifacts
+*.tgz

@@ -1,0 +1,69 @@
+{
+  "name": "@itstartstosnow/dsh-conversation-search",
+  "version": "0.1.0",
+  "description": "Full-text conversation search for the DeepSeek Harness Web GUI: a sidebar panel that searches every session and jumps to the matching message, plus an in-conversation find bar with match navigation.",
+  "type": "module",
+  "main": "index.js",
+  "engines": {
+    "node": "^22.19.0 || >=24.0.0"
+  },
+  "exports": {
+    ".": "./index.js",
+    "./client": "./client.js",
+    "./locale/*.json": "./locale/*.json",
+    "./icon": "./icon.svg"
+  },
+  "files": [
+    "index.js",
+    "lib/**/*.js",
+    "client.js",
+    "cordis.patch.yml",
+    "locale/*.json",
+    "icon.svg",
+    "README.md",
+    "LICENSE"
+  ],
+  "scripts": {
+    "build": "node build-client.mjs",
+    "check": "node build-client.mjs --check",
+    "test": "node --test"
+  },
+  "keywords": [
+    "deepseek-harness",
+    "dsh",
+    "plugin",
+    "conversation-search",
+    "full-text-search",
+    "find-in-page"
+  ],
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/itstartstosnow/dsh-conversation-search.git"
+  },
+  "homepage": "https://github.com/itstartstosnow/dsh-conversation-search#readme",
+  "bugs": {
+    "url": "https://github.com/itstartstosnow/dsh-conversation-search/issues"
+  },
+  "dsh": {
+    "engines": {
+      "dsh": ">=0.2.1-rc.3"
+    },
+    "bundle": {
+      "patch": "./cordis.patch.yml"
+    },
+    "client": {
+      "platform": "web",
+      "immediately": true,
+      "inject": [
+        "@deepseek-ai/dsh-client-ui-conversation",
+        "@deepseek-ai/dsh-client-ui-workspace",
+        "@deepseek-ai/dsh-client-locale"
+      ]
+    }
+  },
+  "author": "itstartstosnow",
+  "publishConfig": {
+    "access": "public"
+  }
+}

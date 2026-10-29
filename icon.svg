@@ -1,0 +1,20 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" width="64" height="64">
+  <defs>
+    <linearGradient id="dcs-bubble" x1="8" y1="6" x2="44" y2="46" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#8f89b8"/>
+      <stop offset="1" stop-color="#7a9bf0"/>
+    </linearGradient>
+    <linearGradient id="dcs-lens" x1="34" y1="30" x2="58" y2="58" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#ffffff"/>
+      <stop offset="1" stop-color="#dfe6ff"/>
+    </linearGradient>
+  </defs>
+  <path d="M12 10h30a8 8 0 0 1 8 8v16a8 8 0 0 1-8 8H26l-9 8v-8h-5a8 8 0 0 1-8-8V18a8 8 0 0 1 8-8Z" fill="url(#dcs-bubble)"/>
+  <g stroke="#ffffff" stroke-width="3" stroke-linecap="round" opacity="0.9">
+    <path d="M15 21h20"/>
+    <path d="M15 29h14"/>
+    <path d="M15 37h9"/>
+  </g>
+  <circle cx="45" cy="45" r="11" fill="none" stroke="url(#dcs-lens)" stroke-width="5"/>
+  <path d="m53 53 7 7" stroke="url(#dcs-lens)" stroke-width="6" stroke-linecap="round"/>
+</svg>
