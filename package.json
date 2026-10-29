@@ -1,6 +1,6 @@
 {
   "name": "@itstartstosnow/dsh-conversation-search",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "description": "Full-text conversation search for the DeepSeek Harness Web GUI: a sidebar panel that searches every session and jumps to the matching message, plus an in-conversation find bar with match navigation.",
   "type": "module",
   "main": "index.js",
